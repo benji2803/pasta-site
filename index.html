@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Pasta | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title"><strong>Simple Pasta</strong></p>
+      <p class="tagline">Easy pasta recipes for busy students and beginners.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Cooking Tips</a></li>
+          <li><a href="submit.html">Suggest a Recipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Pasta does not have to be complicated.</h1>
+        <p>
+          Simple Pasta is a small collection of beginner-friendly recipes that use
+          inexpensive ingredients, short ingredient lists, and basic kitchen tools.
+        </p>
+        <p><a class="button" href="recipes.html">See the recipes</a></p>
+      </div>
+      <img src="images/pasta-bowl.svg" alt="Illustration of a bowl of spaghetti">
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured recipes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/aglio.svg" alt="Illustration of garlic and olive oil pasta">
+          <h3>Aglio e Olio</h3>
+          <p>Garlic, olive oil, chili flakes, parsley, and spaghetti.</p>
+          <a href="recipes.html#aglio">View recipe</a>
+        </article>
+
+        <article class="card">
+          <img src="images/alfredo.svg" alt="Illustration of creamy fettuccine alfredo">
+          <h3>Fettuccine Alfredo</h3>
+          <p>A rich, simple pasta made with butter, cream, and Parmesan.</p>
+          <a href="recipes.html#alfredo">View recipe</a>
+        </article>
+
+        <article class="card">
+          <img src="images/arrabbiata.svg" alt="Illustration of penne in red tomato sauce">
+          <h3>Penne Arrabbiata</h3>
+          <p>Tomato, garlic, chili, and penne for a quick spicy dinner.</p>
+          <a href="recipes.html#arrabbiata">View recipe</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- MDN EXPLORATION ELEMENT: <address>
+           WHAT: <address> represents contact information for a person or organization.
+           WHERE: It appears in the footer on every page.
+           HOW: I use it to identify the website owner/contact information. -->
+      <address>
+        Simple Pasta by Benjamin Maldonado · Los Angeles, CA
+      </address>
+      <p>Built for CIT 384 Project 1.</p>
+    </div>
+  </footer>
+</body>
+</html>

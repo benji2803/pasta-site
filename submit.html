@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Pasta | Suggest a Recipe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title"><strong>Simple Pasta</strong></p>
+      <p class="tagline">Easy pasta recipes for busy students and beginners.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Cooking Tips</a></li>
+          <li><a href="submit.html">Suggest a Recipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Suggest a Pasta Recipe</h1>
+      <p>
+        This form is a front-end demonstration for the class project. It does not send
+        information to a server.
+      </p>
+    </section>
+
+    <section class="form-card">
+      <form action="#" method="get">
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div>
+          <label for="recipe-name">Recipe name</label>
+
+          <!-- MDN EXPLORATION ATTRIBUTE: dirname
+               WHAT: dirname submits the text direction of a text input along with the field value.
+               WHERE: It is on the recipe-name text input.
+               HOW: I use it so a submitted recipe name can also include whether its text direction
+               is left-to-right or right-to-left. -->
+          <input
+            id="recipe-name"
+            name="recipeName"
+            type="text"
+            dirname="recipeName.dir"
+            required>
+        </div>
+
+        <div>
+          <label for="pasta-type">Pasta type</label>
+          <select id="pasta-type" name="pastaType">
+            <option>Spaghetti</option>
+            <option>Penne</option>
+            <option>Fettuccine</option>
+            <option>Rigatoni</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="description">Short description</label>
+          <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div>
+          <label for="photo">Optional pasta photo</label>
+
+          <!-- MDN EXPLORATION ATTRIBUTES: accept and capture
+               ACCEPT:
+               WHAT: accept limits which file types can be selected for a file input.
+               WHERE: It is on the photo file input.
+               HOW: I set it to image/* so the chooser focuses on image files.
+
+               CAPTURE:
+               WHAT: capture can request a camera source on supported mobile devices.
+               WHERE: It is on the same photo file input.
+               HOW: I use capture="environment" so a phone can prefer the rear camera
+               for taking a picture of the finished pasta dish. -->
+          <input
+            id="photo"
+            name="photo"
+            type="file"
+            accept="image/*"
+            capture="environment">
+        </div>
+
+        <button type="submit">Submit idea</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- MDN EXPLORATION ELEMENT: <address>
+           WHAT: <address> represents contact information.
+           WHERE: It appears in the footer.
+           HOW: I use it for website owner information. -->
+      <address>
+        Simple Pasta by Benjamin Maldonado · Los Angeles, CA
+      </address>
+      <p>Built for CIT 384 Project 1.</p>
+    </div>
+  </footer>
+</body>
+</html>
